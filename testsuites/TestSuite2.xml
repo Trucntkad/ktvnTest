@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Karros-KTVN-Test-TrucNguyen-FireFox" parallel="tests" thread-count="1">
+	<!-- <parameter name="browsers" value="firefox,chrome" /> -->
+	<parameter name="browsers" value="firefox" />
+	<parameter name="testsuite" value="Example" />
+
+	<test name="TestSuite2-FireFox">
+		<classes>
+			<!-- Example -->
+			<class name="test.KtvnLoginTest" />	
+			<class name="test.StudentRequest_ApprovedTest" />	
+			<class name="restAssuredAPI.RestAssuredAPI_GET" />	
+			<class name="restAssuredAPI.RestAssuredAPI_GET2" />	
+		</classes>
+	</test>
+
+</suite>
